@@ -17,7 +17,7 @@ app.use('/', require('./routes/index'));
 app.use((req, res, next) => {
     var err = new Error('Not Found');
     err.status = 404;
-    err.customMessage = "Something terrible has happened! Your page has gone missing!"
+    err.customMessage = "Ah Ah Ah! You didn't say the Magic Word!"
     //err.customImage = images/jurassic_park-MSMediaKeyNeededEvent.gif
 
     next(err);

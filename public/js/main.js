@@ -18,7 +18,7 @@ const myVM = (() => {
 
         let bioContent = `
             <p>${person.bio}</p>
-            <h4>Social Media:</h4>
+            <h2>Notable Achievements:</h2>
             <!-- loop thru social media stuff here-->
             ${renderSocialMedia(person.social)}
         `;
