@@ -1,5 +1,3 @@
-{{!-- this is where the data goes when we call on it --}}
-
 <section id="section1" class="panel">
     <div class="bio-info">
         <h1 class="p-name">Some generic info here...</h1>
@@ -24,18 +22,21 @@
 
     <div class="team">
         <!-- loop through all our team members and put their info on the page -->
-        {{#each people}} <!-- exactly like a JS forEach loop -->
+
+        {{#each people}}
         <div class="user-panel">
-            <img src="images/{{avatar}}" alt="" class="u-avatar">
+            <img src="images/{{avatar}}" alt="avatar" class="u-avatar">
+            
             <a href="{{ID}}" class="u-link">
                 See More Info
             </a>
 
             <h1>{{Name}}</h1>
-            <h3>{{JobTitle}}</h3> <!-- Refers to the database -->
+            <h3>{{JobTitle}}</h3>
+
         </div>
 
-        {{/each}} <!--terminates the loop-->
+        {{/each}}
         
     </div>
     </div>
@@ -48,6 +49,8 @@
         </div>
 
         <div class="lb-content">
+            <!-- render the database content here -->
+
 
         </div>
     </section>
