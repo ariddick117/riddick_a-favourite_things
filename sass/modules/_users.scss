@@ -13,10 +13,14 @@
 
         .u-link { 
             display: block; 
-            //width: 150px;  
+            width: 100px;
             text-decoration: none;
+            font-weight: bold;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 3px;
+            background-color: $main-gold;
+            color: black;
+            margin-top: 5px;
             padding: 5px;
         }
 
@@ -32,5 +36,9 @@
             .u-avatar { max-width: 300px; }
         }
     }
+}
+
+@media screen and (min-width: 350px) {
+
 }
 

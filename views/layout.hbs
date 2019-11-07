@@ -14,16 +14,19 @@
 </head>
 
 <body>
-    <h1>Fun with Modules!</h1>
-    <nav data-module="nav">
-        <!-- nav elements must have nav-item -->
-        <ul>
-            <li><a href="#" class="nav-item">Home</a></li>
-            <li><a href="/1" class="nav-item">Sailing</a></li>
-            <li><a href="/2" class="nav-item">Powerlifting</a></li>
-            <li><a href="/3" class="nav-item">Halo</a></li>
-        </ul>
-    </nav>
+    <section class="header-nav">
+        <a href="index.html"></a><img class="header-logo" src="images/ajr_logo.png" alt="Alec Riddick's Logo"></a>
+        <h1>Alec's Favourite Things</h1>
+        <nav data-module="nav">
+            <!-- nav elements must have nav-item -->
+            <ul>
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="/1" class="nav-item">Sailing</a></li>
+                <li><a href="/2" class="nav-item">Powerlifting</a></li>
+                <li><a href="/3" class="nav-item">Halo</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <main>
         {{{ body }}}

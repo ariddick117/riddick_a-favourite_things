@@ -17,9 +17,11 @@
     
     .lb-content {
         flex: 3;
+        text-align: left;
+        margin-left: 25px;
     }
 
-    img { max-width: 250px; }
+    img { max-width: 350px; }
 
     .close {    
         right: 24px;
@@ -30,7 +32,7 @@
         border: thin solid white;
         padding: 2px 14px 5px;
         border-radius: 50%;
-        background-color: rgba(255,255,255,0.25);
+        background-color: $main-gold;
     }
 }
 
