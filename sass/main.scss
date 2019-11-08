@@ -7,7 +7,7 @@
 
 main {
     margin: 0 auto;
-    width: 1280px;
+    //width: 1280px;
     color: $main-color;
     background-color: $body-bg;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +47,10 @@ body {
     position: relative;
 }
 
+.header-logo:hover {
+    cursor: pointer;
+}
+
 .header-nav {
     background-color: $main-blue;
     padding-top: 15px;
@@ -74,8 +78,8 @@ p {
     color: white;
 }
 
-#section1 {
-    background-image: url(../public/images/cap_temp.jpg) fixed no-repeat;
+.panel {
+    background: url("../public/images/cap_temp.jpg") fixed no-repeat;
     background-position: center;
 }
 
@@ -104,5 +108,13 @@ p {
 }
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+
+@media screen and (min-width: 900px) {
+    
+}
+
+@media screen and (min-width: 350px) {
+
+}
 
 @import 'modules/_footer'

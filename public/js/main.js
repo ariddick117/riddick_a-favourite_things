@@ -5,8 +5,8 @@ const myVM = (() => {
     let userButtons = document.querySelectorAll('.u-link'),
         lightBox = document.querySelector('.lightbox');
 
-        //create the social media list
-        function renderSocialMedia(media) {
+        //create the achievements media list
+        function renderAchievements(media) {
             return `<ul class="u-social">
                 ${media.map(item => `<li>${item}</li>`).join("")}
                     </ul>`
@@ -19,8 +19,8 @@ const myVM = (() => {
         let bioContent = `
             <p>${person.bio}</p>
             <h2>Notable Achievements:</h2>
-            <!-- loop thru social media stuff here-->
-            ${renderSocialMedia(person.social)}
+            <!-- loop thru achievements stuff here-->
+            ${renderAchievements(person.achievements)}
         `;
 
         targetDiv.innerHTML = bioContent;
